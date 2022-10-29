@@ -1,8 +1,14 @@
 /* Reset and base styles  */
 * {
+  --font-main: "calibri", sans-serif;
+  --font-title: "helvetica", sans-serif;
+  --font-rounded: "circe-rounded", sans-serif;
+  --font-rounded-hude: "circe-rounded-alt", sans-serif;
+
   padding: 0px;
   margin: 0px;
   border: none;
+  font-family: var(--font-main);
 }
 
 *,
@@ -109,4 +115,47 @@ label {
 
 legend {
   display: block;
+}
+
+
+/* fonts */
+@font-face {
+  font-family: 'calibri';
+  src: url('../public/font/Calibri.woff2') format('woff2'),
+       url('../public/font/Calibri.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'calibri';
+  src: url('../public/font/CalibriBold.woff2') format('woff2'),
+       url('../public/font/CalibriBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'helvetica';
+  src: url('../public/font/Helvetica.woff2') format('woff2'),
+       url('../public/font/Helvetica.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'circe-rounded';
+  src: url('../public/font/CirceRounded.woff2') format('woff2'),
+       url('../public/font/CirceRounded.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'circe-rounded-alt';
+  src: url('../public/font/CirceRoundedAlt.woff2') format('woff2'),
+       url('../public/font/CirceRoundedAlt.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }

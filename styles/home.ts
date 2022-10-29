@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 export const Main = styled.main`
   position: relative;
+  display: flex;
   width: 100%;
   height: 100vh;
 `
