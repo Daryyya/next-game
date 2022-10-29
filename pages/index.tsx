@@ -1,7 +1,8 @@
  import Head from 'next/head'
 import GameSetting from '../container/GameSetting'
+import Background from '../kit/Background'
 import bgMainPage from '../public/image/bg-main-page-4x.jpg'
-import { Main, Bg } from '../styles/home'
+import { Main } from '../styles/home'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
 
       <Main>
-        <Bg src={bgMainPage} alt='bg' priority fill />
+        <Background src={bgMainPage} alt='bg' priority fill />
         <GameSetting />
       </Main>
     </div>

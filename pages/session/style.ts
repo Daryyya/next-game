@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
+import styled from "@emotion/styled";
 
-export const Main = styled.main`
+export const Wrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
@@ -8,4 +8,8 @@ export const Main = styled.main`
   flex-direction: column;
   width: 100%;
   height: 100vh;
+`
+
+export const Inner = styled.div`
+  z-index: 1;
 `
