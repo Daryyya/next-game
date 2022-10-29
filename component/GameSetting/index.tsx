@@ -1,20 +1,27 @@
-import React, { FC } from 'react'
-import { Wrapper, Setting, Form } from './style'
+import React, { FC, FormEventHandler } from 'react'
 import Range from '../../kit/Range'
+import Radio from '../../kit/Radio';
+import { Wrapper, Setting, Form, StyleButton } from './style'
+
 
 interface Props {
-  onSubmit: () => void;
+  amountOptions: string[];
+  variantOptions: string[];
+  dirOptions: string[];
+  onSubmit: FormEventHandler<HTMLFormElement>;
 }
 
 const GameSetting: FC<Props> = (props) => {
-  const { onSubmit } = props;
+  const { onSubmit, amountOptions, dirOptions, variantOptions } = props;
 
   return (
     <Wrapper>
       <Setting>
-        <Form>
-          <Range title='Кол-во предметов' options={['2', '3', '4', '5']}/>
-          <Range title='Значения' options={['A', '9', '19', '50', '99', '999']}/>
+        <Form onSubmit={onSubmit}>
+          <Range name='amount' title='Кол-во предметов' options={amountOptions}/>
+          <Range name='variant' title='Значения' options={variantOptions}/>
+          <Radio name='dir' options={dirOptions}/>
+          <StyleButton>Играть</StyleButton>
         </Form>
       </Setting>
     </Wrapper>

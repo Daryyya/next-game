@@ -1,6 +1,4 @@
  import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import GameSetting from '../container/GameSetting'
 import bgMainPage from '../public/image/bg-main-page-4x.jpg'
 import { Main, Bg } from '../styles/home'
@@ -17,7 +15,6 @@ export default function Home() {
       <Main>
         <Bg src={bgMainPage} alt='bg' priority fill />
         <GameSetting />
-        <Link href='/session'>PLAY</Link>
       </Main>
     </div>
   )
