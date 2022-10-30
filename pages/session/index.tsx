@@ -5,6 +5,7 @@ import Background from "../../kit/Background";
 import { data, Style } from "./data";
 import { HOME } from "../../config/route";
 import { Wrapper, Inner } from "./style";
+import Modal from "./Modal";
 
 const randomIntFromInterval = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1) + min);
 
@@ -22,6 +23,7 @@ const Session = () => {
           home
         </Link>
       </Inner>
+      <Modal/>
     </Wrapper>
   );
 };
