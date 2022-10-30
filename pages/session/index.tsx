@@ -1,30 +1,39 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-import React, { useState } from "react";
-import Background from "../../kit/Background";
-import { data, Style } from "./data";
+import React, { useEffect, useState } from "react";
 import { HOME } from "../../config/route";
-import { Wrapper, Inner } from "./style";
-import Modal from "./Modal";
+import { data, Style } from "../../config/gameStyle";
+import Background from "../../kit/Background";
+import Game from '../../container/Game'
+import { Main, Inner } from "./style";
 
 const randomIntFromInterval = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1) + min);
 
 const Session = () => {
   const router = useRouter();
-  console.log(router.query);
+  const [style, setStyle] = useState<Style>(data[0]);
 
-  const [style] = useState<Style>(data[randomIntFromInterval(0, 3)]);
+  useEffect(() => setStyle(data[randomIntFromInterval(0, 3)]), [])
+
+  const { amount, variant, dir } = router.query as any;
+  
+  if (!amount || !variant || !dir) {
+    router.push(HOME);
+    return null;
+  }
 
   return (
-    <Wrapper>
+    <Main>
       <Background src={style.bg} alt="bg" priority fill />
       <Inner>
-        <Link href={HOME} style={{ fontSize: 40 }}>
-          home
-        </Link>
+        <Game
+          amount={amount}
+          variant={variant}
+          dir={dir}
+          itemsBg={style.itemsBg}
+        />
       </Inner>
-      <Modal/>
-    </Wrapper>
+    </Main>
   );
 };
 

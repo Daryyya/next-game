@@ -7,8 +7,6 @@ const AMOUNT_OPTIONS = ['2', '3', '4', '5']
 const VARIANT_OPTIONS = ['A', '9', '19', '50', '99', '999']
 const DIR_OPTIONS = ['По возрастанию', 'По убыванию']
 
-
-
 const GameSetting: FC = () => {
   const router = useRouter();
 
@@ -21,7 +19,7 @@ const GameSetting: FC = () => {
 
     const indexOfVariant = +(data.get('variant')?.toString() || '');
     const variant = VARIANT_OPTIONS[indexOfVariant];
-    
+
     const dirTitle = data.get('dir');
     const dir = dirTitle === 'По возрастанию' ? 'asc' : 'desc';
     router.push(`${SESSION}?amount=${amount}&variant=${variant}&dir=${dir}`)

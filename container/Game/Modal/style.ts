@@ -6,34 +6,34 @@ export const ModalStyle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 `
 
 export const Overlay = styled.div`
-    position: relative;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 640px;
-    width: 100%;
-    height: fit-content;
-    background: linear-gradient(#67DF89, #8D67DF00);
-    border-radius: 40px;
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(#67DF89, #8D67DF00);
+  border-radius: 40px;
 `
 
 export const Wrapper = styled.div`
-padding: 23px 74px 29px;
-display: flex;
-text-align: center;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-background-color: #FFF;
-border-radius:25px;
-width: 100%;
-height: 100%;
+  padding: 23px 74px 29px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFF;
+  border-radius:25px;
+  width: 100%;
+  height: 100%;
 `
 
 export const Title = styled.p`

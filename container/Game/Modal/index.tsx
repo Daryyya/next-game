@@ -3,7 +3,6 @@ import { HOME } from "../../../config/route";
 import Star from './Star'
 import { ModalStyle, Overlay, Wrapper, Title, Text, StyledNextLink } from "./style";
 
-
 const Modal = () => {
   return (
     <ModalStyle>

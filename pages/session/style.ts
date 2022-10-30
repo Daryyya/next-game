@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const Wrapper = styled.div`
+export const Main = styled.main`
   position: relative;
   display: flex;
   justify-content: center;
