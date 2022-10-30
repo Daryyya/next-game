@@ -1,6 +1,6 @@
 import React from "react";
 import { HOME } from "../../../config/route";
-import Button from "../../../kit/Button";
+import Star from './Star'
 import { ModalStyle, Overlay, Wrapper, Title, Text, StyledNextLink } from "./style";
 
 
@@ -15,6 +15,10 @@ const Modal = () => {
             Заново
             </StyledNextLink>
         </Wrapper>
+        <Star size="small" position={{ top: -25, left: -30 }} />
+        <Star size="big" position={{ top: "70%", left: -60 }} />
+        <Star size="small" position={{ top: "80%", left: "85%" }} />
+        <Star size="big" position={{ top: "20%", left: "85%" }} />
       </Overlay>
     </ModalStyle>
   );

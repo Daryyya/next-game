@@ -13,9 +13,11 @@ export const ModalStyle = styled.div`
 `
 
 export const Overlay = styled.div`
+    position: relative;
     padding: 20px;
     margin: 0 auto;
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     height: fit-content;
     background: linear-gradient(#67DF89, #8D67DF00);
     border-radius: 40px;
