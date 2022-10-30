@@ -12,4 +12,6 @@ export const Main = styled.main`
 
 export const Inner = styled.div`
   z-index: 1;
+  max-width: 980px;
+  width: 100%;
 `
