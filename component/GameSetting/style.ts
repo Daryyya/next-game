@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
   height: fit-content;
   padding: 20px;
   z-index: 1;
-
   @media (max-width: 768px) {
     width: calc(100% - 16px);
     margin: 0 8px;
@@ -28,10 +27,8 @@ export const Form = styled.form`
   @media (max-width: 768px) {
     padding: 32px 40px;
   }
-
   @media (max-width: 576px) {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 16px;
   }
 `
 

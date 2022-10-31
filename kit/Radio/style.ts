@@ -8,7 +8,8 @@ export const Wrapper = styled.div`
 
   @media (max-width: 756px) {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    margin-bottom: 25px;
   }
 `
 

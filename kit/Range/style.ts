@@ -3,6 +3,9 @@ import styled from "@emotion/styled";
 export const Wrapper = styled.div`
   position: relative;
   margin-bottom: 54px;
+  @media (max-width: 768px) {
+    margin-bottom: 35px;
+  }
 `
 
 export const Title = styled.p`

@@ -44,7 +44,7 @@ export const Button = styled.button<ButtonProps>`
   }};
 
   &:disabled {
-    opacity: 0.5;
+    opacity: 0.2;
   }
   &:hover {
     transform: scale(1.2);

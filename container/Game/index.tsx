@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import { FC, useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import View, { Item } from "../../component/Game";
 import { Style } from "../../config/gameStyle";
 import makeRandomNumber from "../../helper/makeRandomNumber";
@@ -65,9 +66,13 @@ const Game: FC<Props> = (props) => {
 
   const handlePick = (value: string) => {
     const sorted = dir === 'asc' ? sortFunc(list) : sortFunc(list).reverse();
+    toast.dismiss()
     if (value === sorted[results.length].value) {
       const obj = sorted.find(el => el.value === value) as Item;
       setResults(p => [...p, obj])
+      toast('Молодец, верно!', { type: 'success' })
+    } else {
+      toast('Упс, давай попробуем другой!')
     }
   }
 

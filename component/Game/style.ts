@@ -9,6 +9,12 @@ export const Wrapper = styled.div`
   width: 100%;
   min-height: 810px;
   padding: 133px 45px 30px;
+  @media (max-width: 1440px) {
+    min-height: auto;
+  }
+  @media (max-width: 576px) {
+    padding: 10px 15px;
+  }
 `
 
 interface DirectionProps {
@@ -56,13 +62,19 @@ export const ResultWrapper = styled.div`
   width: 100%;
   height: 223px;
   align-self: flex-end;
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     height: 150px;
     padding: 20px;
   }
+  @media (max-width: 768px) {
+    height: 125px;
+    padding: 15px;
+  }
   @media (max-width: 576px) {
-    height: 130px;
-    padding: 5px;
+    height: 110px
+  }
+  @media (max-width: 400px) {
+    height: 90px;
   }
 `
 
@@ -77,13 +89,17 @@ export const ResultPlace = styled.div`
   box-shadow: 1px 0px 69px 0px rgba(34, 60, 80, 0.36) inset;
   z-index: 1;
 
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     width: 90px;
     height: 90px;
   }
+  @media (max-width: 991px) {
+    width: 80px;
+    height: 80px;
+  }
   @media (max-width: 576px) {
-    width: 70px;
-    height: 70px;
+    width: 66px;
+    height: 66px;
   }
   @media (max-width: 400px) {
     width: 50px;

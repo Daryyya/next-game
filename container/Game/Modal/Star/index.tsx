@@ -1,7 +1,6 @@
 import React, {FC} from 'react'
-import Image from 'next/image'
 import starImage from './star-image.png'
-import {StarWrapper} from './style'
+import {StarWrapper, DesktopImage, MobileImage} from './style'
 
 interface Props {
   size: 'big' | 'small';
@@ -21,7 +20,8 @@ const Star: FC<Props> = (props) => {
         left: position.left
       }}
     >
-      <Image alt='' src={starImage} width={162} height={156} />
+      <DesktopImage alt='' src={starImage} width={162} height={156} />
+      <MobileImage alt='' src={starImage} width={81} height={78} />
     </StarWrapper>
     
   )
