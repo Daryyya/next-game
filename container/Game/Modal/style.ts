@@ -4,6 +4,7 @@ import NextLink from "next/link";
 export const ModalStyle = styled.div`
   position: fixed;
   display: flex;
+  padding: 70px;
   align-items: center;
   justify-content: center;
   inset: 0;
@@ -13,6 +14,7 @@ export const ModalStyle = styled.div`
 `
 
 export const Overlay = styled.div`
+
   position: relative;
   padding: 20px;
   margin: 0 auto;
@@ -24,7 +26,7 @@ export const Overlay = styled.div`
 `
 
 export const Wrapper = styled.div`
-  padding: 23px 74px 29px;
+  padding: 23px 24px 29px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -44,6 +46,13 @@ export const Title = styled.p`
   color: #FFE44F;
   text-shadow : 0 0 25px rgb(30, 129, 58);
   margin-bottom: 22px;
+  @media (max-width: 768px) {
+    font-size: 70px;
+  }
+  @media (max-width: 576px) {
+    padding: 5px 20px;
+    font-size: 50px;
+  }
 `
 
 export const Text = styled.p`
@@ -52,6 +61,10 @@ export const Text = styled.p`
   line-height: 51px;
   font-family: var(--font-rounded);
   margin-bottom: 73px;
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 `
 
 export const StyledNextLink = styled(NextLink)`
@@ -66,5 +79,13 @@ export const StyledNextLink = styled(NextLink)`
   line-height: 51px;
   &:hover {
     opacity: 0.9;
+  }
+  @media (max-width: 768px) {
+    padding: 10px 30px;
+    font-size: 30px;
+  }
+  @media (max-width: 576px) {
+    padding: 5px 20px;
+    font-size: 24px;
   }
 `

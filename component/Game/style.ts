@@ -25,6 +25,12 @@ export const Direction = styled.div<DirectionProps>`
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 30px;
+  @media (max-width: 576px) {
+    padding-left: ${({direction}) => direction === 'desc' ? '60px' : 0};
+    padding-right: ${({direction}) => direction === 'asc' ? '60px' : 0};
+    margin-bottom: 10px;
+  }
+  
 `
 
 export const DirectionText = styled.p`
@@ -33,6 +39,12 @@ export const DirectionText = styled.p`
   font-weight: 700;
   -webkit-text-stroke: 1px #242546;
   text-shadow: 0 0 2px #242546;
+  @media (max-width: 768px) {
+   font-size: 30px;
+  }
+  @media (max-width: 576px) {
+   font-size: 24px;
+  }
 `
 
 export const ResultWrapper = styled.div`
@@ -44,6 +56,14 @@ export const ResultWrapper = styled.div`
   width: 100%;
   height: 223px;
   align-self: flex-end;
+  @media (max-width: 768px) {
+    height: 150px;
+    padding: 20px;
+  }
+  @media (max-width: 576px) {
+    height: 130px;
+    padding: 5px;
+  }
 `
 
 export const ResultPlace = styled.div`
@@ -56,6 +76,19 @@ export const ResultPlace = styled.div`
   border-radius: 50%;
   box-shadow: 1px 0px 69px 0px rgba(34, 60, 80, 0.36) inset;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
+  @media (max-width: 576px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media (max-width: 400px) {
+    width: 50px;
+    height: 50px;
+  }
 `
 
 export const ResultText = styled.p`
@@ -65,4 +98,10 @@ export const ResultText = styled.p`
   font-weight: 700;
   -webkit-text-stroke: 1px #242546;
   text-shadow: 0 0 2px #242546;
+  @media (max-width: 768px) {
+   font-size: 42px;
+  }
+  @media (max-width: 576px) {
+   font-size: 30px;
+  }
 `

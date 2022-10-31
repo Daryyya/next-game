@@ -18,22 +18,39 @@ export const Input = styled.input`
   width: 100%;
   -webkit-appearance: none;
 
+  &::-moz-range-track {
+    background-color: #FFD748;
+    height: 21px;
+    border-radius: 10px;
+  }
+
   &::-webkit-slider-runnable-track {
-    background: #FFD748;
+    background-color: #FFD748;
     height: 21px;
     border-radius: 10px;
   }
   
   &::-ms-fill-lower {
-    background: #e1e1e1;
+    background-color: #FFD748;
     border-radius: 10px; 
   }
   &::-ms-fill-upper {
-    background: #eee;
+    background-color: #FFD748;
   }
 
   &::-moz-range-thumb {
     background: #104987;
+    border: none;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:active{
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
   }
 
   &::-webkit-slider-thumb {

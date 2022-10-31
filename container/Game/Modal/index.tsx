@@ -14,7 +14,7 @@ const Modal = () => {
             Заново
             </StyledNextLink>
         </Wrapper>
-        <Star size="small" position={{ top: -25, left: -30 }} />
+        <Star size="small" position={{ top: '-5%', left: -30 }} />
         <Star size="big" position={{ top: "70%", left: -60 }} />
         <Star size="small" position={{ top: "80%", left: "85%" }} />
         <Star size="big" position={{ top: "20%", left: "85%" }} />

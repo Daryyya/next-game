@@ -3,8 +3,13 @@ import styled from "@emotion/styled";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 85px;
+  flex-wrap: no-wrap;
+  margin-bottom: 65px;
+
+  @media (max-width: 756px) {
+    flex-direction: column;
+    align-items: center; 
+  }
 `
 
 export const Visual = styled.span`
@@ -21,7 +26,13 @@ export const Visual = styled.span`
   font-size: 32px;
   line-height: 44px;
   margin-right: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(34, 60, 80, 0.23);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(34, 60, 80, 0.23);
+    box-shadow: 0px 0px 20px 2px rgba(34, 60, 80, 0.23);
+  }
 `
 export const Input = styled.input`
   position: absolute;
