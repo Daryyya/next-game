@@ -3,7 +3,6 @@ import Range from '../../kit/Range'
 import Radio from '../../kit/Radio';
 import { Wrapper, Setting, Form, StyleButton } from './style'
 
-
 interface Props {
   amountOptions: string[];
   variantOptions: string[];

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import GameSetting from "../container/GameSetting";
 import Background from "../kit/Background";
 import bgMainPage from "../public/image/bg-main-page-4x.jpg";

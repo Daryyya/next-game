@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Item } from "../index";
 import Image from "next/image";
-import { ListWrapper, Button, Text } from './style';
+import { ListWrapper, Button, Text } from "./style";
 
 interface Props {
   list: Item[];

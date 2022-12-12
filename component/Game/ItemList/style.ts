@@ -6,9 +6,6 @@ export const ListWrapper = styled.div`
   width: 100%;
   height: 300px;
   margin-bottom: 100px;
-  @media (max-width: 768px) {
-    
-  }
   @media (max-width: 576px) {
     margin-bottom: 30px;
   }
@@ -38,7 +35,6 @@ export const Button = styled.button<ButtonProps>`
     if (index === 2) return 'calc(50% - 157px/2)';
     if (index === 3) return '60%';
     if (index === 4) return 'calc(100% - 157px)';
-
 
     return 0;
   }};
@@ -75,7 +71,6 @@ export const Button = styled.button<ButtonProps>`
     if (index === 2) return 'calc(50% - 120px/2)';
     if (index === 3) return '60%';
     if (index === 4) return 'calc(100% - 140px)';
-
 
     return 0;
   }};

@@ -1,7 +1,5 @@
 import { useRouter } from "next/router";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { HOME } from "../config/route";
 import { data, Style } from "../config/gameStyle";
 import makeRandomNumber from "../helper/makeRandomNumber";
 import Background from "../kit/Background";

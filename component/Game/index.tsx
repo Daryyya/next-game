@@ -27,8 +27,6 @@ interface Props {
 const Game: FC<Props> = (props) => {
   const { list, dir, resultBg, onPick, results } = props;
 
-  console.log(results)
-
   return (
     <Wrapper>
         <ItemList list={list} onPick={onPick} results={results} />
